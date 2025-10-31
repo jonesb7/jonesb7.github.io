@@ -3,33 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brittney Jones — HTML Tutorials</title>
+  <title>Brittney Jones — HTML Tutorial Assessments</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; }
-    h1 { color: #222; }
-    ul { line-height: 1.8; }
+    :root { --max: 820px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+    .wrap { max-width: var(--max); }
+    h1 { margin: 0 0 .25rem 0; }
+    .muted { color: #666; margin: 0 0 1.25rem 0; }
+    ul { line-height: 1.8; padding-left: 1.25rem; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 2rem; color: #777; font-size: .9rem; }
   </style>
 </head>
 <body>
-  <h1>Brittney Jones</h1>
-  <p>Welcome to my HTML tutorial site. Below are links to my completed exercises.</p>
+  <div class="wrap">
+    <h1>Brittney Jones</h1>
+    <p class="muted">HTML tutorial site — links to my completed “Test your skills” exercises.</p>
 
-  <ul>
-    <li>
-      <ul>
-  <li><a href="./intro/advanced-text.html">Advanced HTML Text</a></li>
-  <li><a href="./audio-video.html">Audio and Video</a></li>
-  <li><a href="./forms-buttons.html">Forms and Buttons</a></li>
-  <li><a href="./images.html">HTML Images</a></li>
-  <li><a href="./text-basics.html">HTML Text Basics</a></li>
-  <li><a href="./links.html">Links</a></li>
-</ul>
+    <ul>
+      <li><a href="./intro/advanced-text.html">Advanced HTML Text</a></li>
+      <li><a href="./audio-video.html">Audio and Video</a></li>
+      <li><a href="./forms-buttons.html">Forms and Buttons</a></li>
+      <li><a href="./images.html">HTML Images</a></li>
+      <li><a href="./text-basics.html">HTML Text Basics</a></li>
+      <li><a href="./links.html">Links</a></li>
+    </ul>
 
-    </li>
-  </ul>
-
-  <footer style="margin-top:2rem; font-size:0.9rem; color:#555;">
-    Hosted on GitHub Pages.
-  </footer>
+    <footer>Hosted on GitHub Pages.</footer>
+  </div>
 </body>
 </html>
